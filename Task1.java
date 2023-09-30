@@ -11,10 +11,7 @@ public class Task1 {
         System.out.println("ENTER HOW MANY ROUND YOU ARE PLAY");
         int round = sc.nextInt();
 
-        int limit = 5;
-        int guess, i;
-        int score = 0;
-        int x = 1;
+        int limit = 5,guess, i,score = 0,x = 1;
 
         for (int k = 0; k < round; k++) {
 
@@ -25,7 +22,7 @@ public class Task1 {
                 guess = sc.nextInt();
 
                 if (guess == number) {
-                    System.out.println("congratulation ! your won");
+                    System.out.println("congratulation ! you won");
                     score += i;
                     break;
                 } else if (guess > number && i != limit - 1) {
