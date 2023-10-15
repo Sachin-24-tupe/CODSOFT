@@ -38,11 +38,11 @@ public class Task1 {
         }
 
         try {
-            float averageAttempts = (float) (score / round) * 100;
+            int averageAttempts = score;
 
             System.out.println("All rounds finished. Game Over");
             System.out.println("Total rounds: " + round);
-            System.out.println("Total score: " + averageAttempts + "%");
+            System.out.println("Total score: " + ++averageAttempts + "%");
             sc.close();
         } catch (ArithmeticException ae) {
             System.out.println("The number was: " + number);
